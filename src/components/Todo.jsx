@@ -2,7 +2,7 @@ import React from "react";
 import { FaTrash } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 
-export default function Todo({title , completed , id ,handleRemove , handleComplete}) {
+export default function Todo({title , completed , id , handleRemove , handleComplete}) {
  
   return (
     <div>
@@ -13,7 +13,7 @@ export default function Todo({title , completed , id ,handleRemove , handleCompl
           <FaCheck />
         </button>
 
-        <button onClick={()=> handleRemove(id)} className="trash-btn">
+        <button onClick={()=>handleRemove(id)} className="trash-btn">
           <FaTrash />
         </button>
       </div>
